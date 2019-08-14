@@ -1,0 +1,57 @@
+{
+  "name": "island",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "lint": "tslint -c tslint.yml -p tsconfig.json",
+    "start": "export NODE_ENV=development; nodemon --config nodemon.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "theseusv",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "basic-auth": "^2.0.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.0.0",
+    "jsonwebtoken": "^8.4.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.1",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.11",
+    "module-alias": "^2.2.0",
+    "mysql2": "^1.6.5",
+    "npm-check": "^5.9.0",
+    "reflect-metadata": "^0.1.13",
+    "require-directory": "^2.1.1",
+    "routing-controllers": "^0.7.7",
+    "sequelize": "^5.6.1",
+    "sequelize-typescript": "^0.6.11",
+    "typedi": "^0.8.0",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/koa": "^2.0.49",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/lodash": "^4.14.136",
+    "nodemon": "^1.19.1",
+    "pre-commit": "^1.2.2",
+    "ts-node": "^8.3.0",
+    "tsconfig-paths": "^3.8.0",
+    "tslint": "^5.18.0",
+    "tslint-config-lambdas": "^1.1.1",
+    "typescript": "^3.5.3"
+  },
+  "engines": {
+    "node": ">= 8.10.0"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
